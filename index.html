@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CT Sandbox</title>
+  <script type="text/javascript">
+    var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[]};
+    clevertap.account.push({"id": "CLEVERTAP_ACCOUNT_ID"});
+    clevertap.privacy.push({optOut: false});
+    clevertap.privacy.push({useIP: false});
+    (function () {
+      var wzrk = document.createElement('script');
+      wzrk.type = 'text/javascript';
+      wzrk.async = true;
+      wzrk.src = 'https://cdn.jsdelivr.net/npm/clevertap-web-sdk/clevertap.min.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wzrk, s);
+    })();
+  </script>
+</head>
+<body>
+  <h1>Test page</h1>
+  <p>This page exists to feed CleverTap events.</p>
+</body>
+</html>
