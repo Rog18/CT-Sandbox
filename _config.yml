@@ -1,0 +1,20 @@
+theme: minima
+title: Achala Bhushan
+description: "I sometimes write about whatever I think I do & know."
+author: Achala Bhushan
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+
+minima:
+  skin: classic
+  social_links:
+    - platform: medium
+      user_url: "https://achalabhushan.medium.com/"
+
+# Exclude files from the generated site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
